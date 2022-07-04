@@ -114,7 +114,16 @@
       {/block}
     {/if}
   </div>
-
+    <style>
+    .btn-touchspin
+    {
+      color:black;
+    }
+    .btn-touchspin i
+    {
+      font-size: 17px;
+    }
+    </style>
   <!--  product line right content: actions (quantity, delete), price -->
   <div class="product-line-grid-right product-line-actions col-md-5 col-xs-12">
     <div class="row">
@@ -165,8 +174,8 @@
               data-id-customization   	  = "{$product.id_customization|escape:'javascript'}"
           >
             {if empty($product.is_gift)}
-              {* <i class="material-icons float-xs-left">delete</i> *}
-              <i class="fa fa-trash-o" style="color: #cd3750; font-size: 20px;"></i>
+              <i class="material-icons float-xs-left" style="color: #cd3750; font-size: 20px;">delete</i>
+              {* <i class="fa fa-trash-o" style="color: #cd3750; font-size: 20px;"></i> *}
             {/if}
           </a>
 

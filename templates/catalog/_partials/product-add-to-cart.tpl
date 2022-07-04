@@ -1,8 +1,20 @@
 <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
   <input type="hidden" name="token" value="{$static_token}">
   <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
-  <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id" class="js-product-customization-id">
-  <div class="product-add-to-cart js-product-add-to-cart">
+  <div class="blockcart product-add-to-cart js-product-add-to-cart" data-refresh-url="{Context::getContext()->link->getModuleLink('ps_shoppingcart', 'ajax', [], null, null, null, true)}">
+  {if $page.page_name=="index"}
+    <button   
+      class="single_add_to_cart_button alt special_btn_add_to_cart"
+      data-button-action="add-to-cart"
+      type="submit"
+      {if !$product.add_to_cart_url}
+        disabled
+      {/if}
+    >
+     <i class="fa fa-shopping-cart"></i>
+    </button>
+  {else} 
+    <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id" class=" js-product-customization-id">
     {if !$configuration.is_catalog}
       {block name='product_quantity'}
         <div class="product-quantity clearfix">
@@ -41,7 +53,6 @@
             </button>
           </div>
 
-          {hook h='displayProductActions' product=$product}
         </div>
       {/block}
 
@@ -71,6 +82,7 @@
           {/if}
         </p>
       {/block}
-    {/if}
+    {/if} 
+  {/if}  
   </div>
 </form>

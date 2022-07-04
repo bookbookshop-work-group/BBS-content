@@ -1,15 +1,15 @@
 
-<div class="container">
+{* <div class="container">
 <div class="row">
   {block name='hook_footer_before'}
     {hook h='displayFooterBefore'}
   {/block}
 </div>
-</div>
+</div> *}
 
 <!-- Footer-->
 <footer id="Footer" class="clearfix" style="background-color: #f7f7f7;">
-<div class="widgets_wrapper invisible">
+{* <div class="widgets_wrapper invisible">
   <div class="container">
       <div class="one-third column">
           <!-- Recent Comments Area -->
@@ -51,7 +51,7 @@
 margin-right: auto;
 margin-bottom: 4px;
 margin-left: auto;
-max-width: 1465px;">
+max-width: 1465px;"> *}
 <!-- Footer - First area -->
 <div class="widgets_wrapper" style="background-color: #cd3750;">
   <div class="container">

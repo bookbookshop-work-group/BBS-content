@@ -16,6 +16,17 @@
   <meta property="product:weight:value" content="{$product.weight}">
   <meta property="product:weight:units" content="{$product.weight_unit}">
   {/if}
+
+  <style>
+    .btn-touchspin
+    {
+      color:black;
+    }
+    .btn-touchspin i
+    {
+      font-size: 17px;
+    }
+    </style>
 {/block}
 
 {block name='head_microdata_special'}
@@ -45,7 +56,14 @@
           <div class="column one-second summary entry-summary">
               <h1 class="product_title entry-title" style="margin-bottom: 0;"><b> {block name='page_title'}{$product.name}{/block}</b></h1><br>
               <div class="product_meta">
-                  <span class="posted_in" style="font-size: 1.5em;">{l s="Auteur" d="Shop.Theme.Catalog"}: <a style="color: #000;">Angelbert Moril</a></span>
+              {foreach from=$product['features'] item=feat}
+                {* {var_dump($feat)}
+                {var_dump($feat.id_feature)} *}
+                {if $feat.id_feature=="4" }
+                  <span class="posted_in" style="font-size: 1.5em;">{l s="Auteur" d="Shop.Theme.Catalog"}: <a style="color: #000;">{$feat.value}</a></span>
+                {/if}
+              {/foreach}
+                  
               </div>
               {* <div style="font-size: 20px !important;">
               <i class="fa fa-star" aria-hidden="true"
@@ -84,6 +102,8 @@
               {block name='product_add_to_cart'}
                 {include file='catalog/_partials/product-add-to-cart.tpl'}
               {/block}
+          {hook h='displayProductActions' product=$product} 
+
               {block name='product_additional_info'}
                 {include file='catalog/_partials/product-additional-info.tpl'}
               {/block}

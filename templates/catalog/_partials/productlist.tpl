@@ -26,9 +26,11 @@
 {capture assign="productClasses"}{if !empty($productClass)}{$productClass}{else}col-xs-6 col-xl-4{/if}{/capture}
 
 <div class="products{if !empty($cssClass)} {$cssClass}{/if} products_wrapper isotope_wrapper">
-    <ul class="products grid col-4">
+    <div class="products grid row ">
         {foreach from=$products item="product" key="position"}
-            {include file="catalog/_partials/miniatures/product.tpl" product=$product position=$position productClasses=$productClasses}
+            <div class="col-sm-12 col-md-4">
+                {include file="catalog/_partials/miniatures/product.tpl" product=$product position=$position productClasses=$productClasses}
+            </div>
         {/foreach}
-    </ul>
+    </div>
 </div>

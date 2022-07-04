@@ -8,14 +8,14 @@
 		<br>
 	</div>
 </a> *}
-<a href="{$url}">      
-	<div class="column one-fourth column_how_it_works">
-		<div class="how_it_works no_border">
-			<div class="image"><img src="{$urls.img_url}bbs/heart.png" class="scale-with-grid" alt="Step 4">
-			</div>
-			<h4>{l s='Liste de vœux' d='Shop.Theme.Customeraccount'}</h4>
-			<div class="desc">
-			</div>
-		</div>
+<a href="{$url}"  style="color: rgb(62, 62, 62);">
+<div class="wishlist d-flex flex-row align-items-center justify-content-end">
+	<div class="wishlist_icon"><img
+			src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png"
+			alt=""></div>
+	<div class="wishlist_content">
+		<div class="wishlist_text"><a href="{$url}">Vœux</a></div>
+		{* <div class="wishlist_count">0</div> *}
 	</div>
-</a>
+</div>
+</a> 

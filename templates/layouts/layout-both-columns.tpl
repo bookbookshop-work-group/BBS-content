@@ -15,6 +15,7 @@
         {block name='hook_after_body_opening_tag'}
           {hook h='displayAfterBodyOpeningTag'}
         {/block}
+  {hook h="displayHeader"}
 
         <div id="Header_wrapper" class="slider">
           <!-- Header -->
@@ -42,7 +43,7 @@
                   <div class="section">
                     <div class="section_wrapper clearfix">
                       <div class="items_group clearfix">
-                        <div class="container">
+                        <div >
                           <div class="column one woocommerce-content" style="margin-top:20px">
                             {* {block name='breadcrumb'}
                               {include file='_partials/breadcrumb.tpl'}

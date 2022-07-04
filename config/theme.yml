@@ -47,13 +47,32 @@ assets:
 #      - id: cat-extra-lib
 #        path: assets/js/cart-lib.js
 
+dependencies:
+  modules:
+    - ps_crossselling
+    - blockwishlist
+    - ps_shoppingcart
+    - ps_linklist
+    - ps_contactinfo
+    - ps_socialfollow
+    # - selectionproduitdumois
+
 
 global_settings:
   configuration:
     PS_IMAGE_QUALITY: png
   modules:
    to_enable:
-     - ps_linklist
+      - ps_linklist
+      - categoryproductlist
+      - ps_crossselling
+      - blockwishlist
+      - ps_shoppingcart
+      - ps_contactinfo
+      - ps_socialfollow
+      
+
+
 
   hooks:
     modules_to_hook:
@@ -96,6 +115,9 @@ global_settings:
       displayOrderConfirmation2:
         - ps_featuredproducts
       displayCrossSellingShoppingCart:
+        - ps_crossselling
+
+      displayFeatureProductShoppingCart:
         - ps_featuredproducts
 
       displaySearchBarModule:
@@ -104,6 +126,29 @@ global_settings:
         - ps_shoppingcart
       displayNewsLetter:
         - ps_emailsubscription
+      displayListPoductCategory:
+        - categoryproductlist
+      
+      displayCustomerAccount:
+        - blockwishlist
+      
+      displayMyAccountBlock: 
+        - blockwishlist
+      
+      displayHeader:
+        - blockwishlist
+        - ps_shoppingcart
+        
+      displayProductListFunctionalButtons:
+        - blockwishlist
+        
+      displayProductActions:
+        - blockwishlist
+        
+      displayBestSeller:
+        - ps_bestsellers
+      # displaySelectionDuMois:
+        # - selectionproduitdumois
       
 
   image_types:

@@ -24,14 +24,52 @@
  *}
 {extends file='page.tpl'}
 
-    {block name='page_content_container'}
-      <section id="content" class="page-home">
-        {block name='page_content_top'}{/block}
 
-        {block name='page_content'}
-          {block name='hook_home'}
-            {$HOOK_HOME nofilter}
-          {/block}
-        {/block}
-      </section>
-    {/block}
+{block name='content_wrapper'}
+  {hook h='displayListPoductCategory' idCategory="3"}
+  {hook h='displayFeatureProductShoppingCart'}
+  {hook h='displayListPoductCategory' idCategory="6"}
+  {hook h='displayBestSeller'}
+  {hook h='selectionproduitdumois'}
+  {hook h='displayListPoductCategory' idCategory="9"}
+
+  <div class="section flv_sections_11" style="margin-top: 30px;">
+    <div class="section_wrapper clearfix">
+      <div class="items_group clearfix">
+        <!-- Page Title-->
+        <!-- One full width row-->
+        <div class="column one column_fancy_heading">
+            <div class="fancy_heading fancy_heading_line">
+                <h2 class="title" style="color: #E53B5D;"><b> {l s="Plus de catégories" d="Shop.Theme.Global"}</b></h2>
+            </div>
+        </div>
+
+        {foreach from=Category::getHomeCategories($language.id) item=category}
+          {* {if $category.id_category!="1" && $category.id_category!="2" && $category.id_parent=="2"} *}
+            <!-- One Third (1/3) Column -->
+            <a href="{$link->getCategoryLink($category.id_category, $category.link_rewrite)|escape:'htmlall':'UTF-8'}" title="{$category.name|escape:'htmlall':'UTF-8'}">
+            <div class="column one-fourth column_our_team">
+                <!-- Team Member Area -->
+                <div class="team team_circle">
+                    <div class="image_frame no_link scale-with-grid">
+                        <div class="image_wrapper">
+                            <img class="scale-with-grid" style="height: 250px; width: 300px;" src="{$link->getCatImageLink($category.name, $category.id_category, 'category_default')|escape:'html'}" alt="{$category.name|escape:'htmlall':'UTF-8'}" />
+                        </div>
+                    </div>
+                    <div class="desc_wrapper">
+                        <h4>{$category.name|escape:'htmlall':'UTF-8'}</h4>
+                        <hr class="hr_color" />
+                    </div>
+                </div>
+            </div>
+          </a> 
+           {* {/if}
+          {var_dump($category)} *}
+        {/foreach}
+        
+      </div>
+    </div>
+</div>
+
+  
+{/block}

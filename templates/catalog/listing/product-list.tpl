@@ -32,9 +32,11 @@
   <section id="main">
 
     {block name='product_list_header'}
-      <h1  class="h2"></h1>
-      <div class="column one column_fancy_heading">
-        <h5 id="js-product-list-header" class="" style="font-size: 42px;"><i>{$listing.label}</i></h5>
+      <div class="row">
+        <h1  class="h2"></h1>
+        <div class="column one column_fancy_heading">
+          <h5 id="js-product-list-header" class="" style="font-size: 42px;"><i>{$listing.label}</i></h5>
+        </div>
       </div>
     {/block}
 

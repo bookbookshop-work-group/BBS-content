@@ -1,4 +1,5 @@
 {block name='header_banner'}
+
   <div class="header-banner">
     {hook h='displayBanner'}
   </div>
@@ -56,7 +57,7 @@
               {hook h="displaySearchBarModule"}
               <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                 <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
-                  {hook h="displayMyAccountBlock"} 
+                  {hook h="displayCustomerAccount"} 
                   {hook h="displayShippingCartModule"}
                 </div>
               </div>           
@@ -146,7 +147,6 @@
           </div>
       </div>
     </div>
-    
    {* <nav class="header-nav">
       <div class="container">
         <div class="row">

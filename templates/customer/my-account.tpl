@@ -116,7 +116,7 @@
       </a>
       <!-- One Fourth (1/4) Column -->
       {block name='display_customer_account'}
-        {hook h='displayCustomerAccount'}
+        {hook h='displayMyAccountBlock'}
       {/block}
       
 {/block}
@@ -124,10 +124,12 @@
 
 {block name='page_footer'}
   {block name='my_account_links'}
-    <div class="text-sm-center">
-      <a href="{$urls.actions.logout}" >
-        {l s='Sign out' d='Shop.Theme.Actions'}
-      </a>
+    <div class="row">
+      <div class="text-sm-center">
+        <a href="{$urls.actions.logout}" >
+          {l s='Sign out' d='Shop.Theme.Actions'}
+        </a>
+      </div>
     </div>
   {/block}
 {/block}
