@@ -34,20 +34,20 @@
  */
 
 $(document).ready(function () {
-  prestashop.blockcart = prestashop.blockcart || {};
-  // prestashop.blockcart.showModal || 
-  var showModal = function (modal) {
-
-    $.toast({
-      bgColor:"#28a745",
-      textColor:"white",
+  let myToast=null;
+  $(".special_btn_add_to_cart").on("click",()=>{
+    myToast=$.toast({
+      heading: '',
+      text: '<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>',
+      icon: 'info',
       position: 'top-right',
       textAlign: 'left',
-      text:modal
-    })
-    
-  };
-
+      hideAfter: false
+  });
+  })
+  prestashop.blockcart = prestashop.blockcart || {};
+  // prestashop.blockcart.showModal || 
+  
   prestashop.on(
     'updateCart',
     function (event) {
@@ -71,14 +71,38 @@ $(document).ready(function () {
         prestashop.emit('showErrorNextToAddtoCartButton', { errorMessage: event.resp.errors.join('<br/>')});
       }
       $.post(refreshURL, requestData).then(function (resp) {
-          console.log("resultData ",resp.preview)
         if (resp.preview) {
           $('#blockcart').replaceWith($(resp.preview));
         }
 
         if(resp.modal)
         {
-          showModal(resp.modal);
+          if(myToast)
+          {
+
+            myToast.update({
+              heading:"Success",
+              bgColor:"#28a745",
+              textColor:"white",
+              position: 'top-right',
+              textAlign: 'left',
+              allowToastClose: true,
+              text:resp.modal,
+              loader: true, 
+              hideAfter: 3000, 
+              showHideTransition: 'fade',
+            })
+            window.setTimeout(function(){
+              myToast.reset();
+            }, 3000)
+          }
+          else $.toast({
+            bgColor:"#28a745",
+            textColor:"white",
+            position: 'top-right',
+            textAlign: 'left',
+            text:resp.modal
+          })
         }
       }).fail(function (resp) {
         prestashop.emit('handleError', { eventType: 'updateShoppingCart', resp: resp });
