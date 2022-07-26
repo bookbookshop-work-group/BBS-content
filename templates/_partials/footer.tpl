@@ -88,18 +88,8 @@ max-width: 1465px;"> *}
               <h4 style="color: #fff;"><b> Aide rapide</b></h4><br>
               <div class="textwidget">
                   <ul class="list_mixed">
-                      <li class="list_idea" style="color: #fff; "><i></i>
-                          Trouver une librairie dans votre ville
-                      </li>
-                      <li style="color: #fff; ">
-                          <select type="select">
-                              <option value="Sélectionner votre ville" selected>Sélectionner votre ville
-                              </option>
-                              <option value="Yaoundé">Yaoundé</option>
-                              <option value="Douala">Douala</option>
-                          </select>
-                      </li>
-                          <a href="#openModal">
+                      
+                          <a >
                           <li class="list_idea" style="color: #fff; ">
                               Signaler une erreur
                           </li></a>

@@ -10,6 +10,7 @@
   </head>
 
   <body id="{$page.page_name}" class="{$page.body_classes|classnames} archive -product with_aside aside_right woocommerce woocommerce-page color-blue layout-full-width header-modern sticky-header sticky-white subheader-title-left">
+  {block name='general_content'}
     <div class="super_container">
       <div id="Wrapper">
         {block name='hook_after_body_opening_tag'}
@@ -107,7 +108,10 @@
           {hook h='displayBeforeBodyClosingTag'}
         {/block}
       </div>  
-    </div>      
+    </div>     
+  {/block}
+
+     
 
 
     <a href="#Header">

@@ -1,3 +1,19 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.steps@1.1.1/dist/jquery-steps.min.css">
+
 {foreach $stylesheets.external as $stylesheet}
     <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
   {/foreach}
@@ -42,15 +58,6 @@
 <!-- Revolution Slider -->
 <link rel="stylesheet" href="{$urls.theme_assets}rs-plugin/css/settings.css">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-
-
-
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 
