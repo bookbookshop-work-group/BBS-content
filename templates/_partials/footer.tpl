@@ -1,81 +1,38 @@
+<style>
+#Footer a
+{
+    color:white !important;
+}
+</style>
 
-{* <div class="container">
-<div class="row">
-  {block name='hook_footer_before'}
-    {hook h='displayFooterBefore'}
-  {/block}
-</div>
-</div> *}
 
 <!-- Footer-->
 <footer id="Footer" class="clearfix" style="background-color: #f7f7f7;">
-{* <div class="widgets_wrapper invisible">
-  <div class="container">
-      <div class="one-third column">
-          <!-- Recent Comments Area -->
-          <aside class="widget widget_text">
-              <div class="col-xs-4 icon-fot">
-                  <span class="fa fa-map-marker" aria-hidden="true"></span>
-                  <div class="col-xs-8 text-form-footer">
-                      <h3>Livraison à domicile</h3>
-                  </div>
-              </div>
-          </aside>
-      </div>
-      <div class="one-third column">
-          <!-- Recent posts -->
-          <aside class="widget widget_mfn_recent_posts">
-              <div class="col-xs-4 icon-fot"><br>
-                  <!-- <span class="fa fa-refresh" aria-hidden="true"></span> -->
-                  <img src="{$urls.img_url}bbs/dhl.png" alt="">
-                  <div class="col-xs-8 text-form-footer">
-                      <h3>Expedition internationale</h3>
-                  </div>
-              </div>
-          </aside>
-      </div>
-      <div class="one-third column">
-          <!-- Text Area -->
-          <aside id="text-8" class="widget widget_text">
-              <div class="col-xs-4 icon-fot">
-                  <span class="fa fa-credit-card" aria-hidden="true"></span>
-                  <div class="col-xs-8 text-form-footer">
-                      <h3>Paiement Flexible </h3>
-                  </div>
-              </div>
-          </aside>
-      </div>
-  </div>
-</div>
-<hr style="
-margin-right: auto;
-margin-bottom: 4px;
-margin-left: auto;
-max-width: 1465px;"> *}
+
 <!-- Footer - First area -->
-<div class="widgets_wrapper" style="background-color: #cd3750;">
+<div class="widgets_wrapper footer_spec" style="background-color: #cd3750;">
   <div class="container">
       <div class="one-fourth column">
           <!-- Text Area -->
           <aside id="text-7" class="widget widget_text">
               <div class="textwidget">
-                  <h4 style="color: #fff;"><b>A propos de Nous</b></h4><br>
+                  <h4 style="color: #fff;"><b><a href="{$link->getCMSLink(4)|escape:'html'}">A propos de Nous</a></b></h4><br>
                   <div class="textwidget">
                       <ul class="list_mixed">
                           <li class="list_idea" style="color: #fff; "><i></i>
-                              Qui sommes nous?
+                          <a href="{$link->getCMSLink(4)|escape:'html'}">Qui sommes nous?</a>
                           </li>
                           <li class="list_idea" style="color: #fff; ">
-                              L'équipe
+                          <a href="{$link->getCMSLink(4)|escape:'html'}">L'équipe</a>
                           </li>
                           <li class="list_idea" style="color: #fff; ">
-                              Nos partenaires
+                          <a href="{$link->getCMSLink(4)|escape:'html'}">Nos partenaires</a>
                           </li>
                           <li class="list_idea" style="color: #fff; ">
-                              Nous contacter
+                          <a href="{$urls.pages.contact}">Nous contacter</a>
                           </li>
                           <li class="list_idea" style="color: #fff; ">
-                              Nos récompenses
+                          <a href="{$link->getCMSLink(4)|escape:'html'}">Nos récompenses</a>
                           </li>
                       </ul>
                   </div>
@@ -165,25 +122,25 @@ max-width: 1465px;">
       <div class="one-fourth column">
           <!-- Recent Comments Area -->
           <aside class="widget widget_mfn_recent_comments" >
-               Plan du site 
+          <a href="{$urls.pages.sitemap}">Plan du site</a> 
           </aside>
       </div>
       <div class="one-fourth column">
           <!-- Recent Comments Area -->
           <aside class="widget widget_mfn_recent_comments" >
-              Conditions d'utilisation
+          <a href="{$link->getCMSLink(3)|escape:'html'}">Conditions d'utilisation</a> 
           </aside>
       </div>
       <div class="one-fourth column">
           <!-- Recent posts -->
           <aside class="widget widget_mfn_recent_posts">
-              Politique de confidentialité
+          <a href="{$link->getCMSLink(3)|escape:'html'}">Politique de confidentialité</a> 
           </aside>
       </div>
       <div class="one-fourth column">
           <!-- Text Area -->
           <aside id="text-7" class="widget widget_text">
-              Respect de la vie privée
+          <a href="{$link->getCMSLink(2)|escape:'html'}">Respect de la vie privée</a> 
           </aside>
       </div>
       <div class="column">
