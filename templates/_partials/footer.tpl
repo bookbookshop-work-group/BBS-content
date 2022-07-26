@@ -1,8 +1,12 @@
 <style>
+
+
 #Footer a
 {
-    color:white !important;
+    color:white ;
 }
+
+
 </style>
 
 
@@ -48,10 +52,10 @@
                       
                           <a >
                           <li class="list_idea" style="color: #fff; ">
-                              Signaler une erreur
+                          <a href="{$urls.pages.contact}">Signaler une erreur</a>
                           </li></a>
                       <li class="list_idea" style="color: #fff; ">
-                          Editeurs, libraires, bourses du livre? Faites-vous référencer gratuitement 
+                        <a href="{$urls.pages.contact}">Editeurs, libraires, bourses du livre? Faites-vous référencer gratuitement</a>
 
                       </li>
                   </ul>
