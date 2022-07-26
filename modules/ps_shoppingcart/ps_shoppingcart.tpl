@@ -1,6 +1,6 @@
 <!-- Cart -->
-<div class="cart">
-    <div data-refresh-url="{$refresh_url}" class="cart_container d-flex flex-row align-items-center justify-content-end">
+<div class="cart " id="blockcart" data-refresh-url="{$refresh_url}">
+    <div class="cart_container d-flex flex-row align-items-center justify-content-end">
         <a class="cart_icon" href="{$cart_url}">
             <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png"
                 alt="">

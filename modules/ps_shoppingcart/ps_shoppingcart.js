@@ -45,11 +45,7 @@ $(document).ready(function () {
       textAlign: 'left',
       text:modal
     })
-    $body.one('click', '#blockcart-modal', function (event) {
-      if (event.target.id === 'blockcart-modal') {
-        $(event.target).remove();
-      }
-    });
+    
   };
 
   prestashop.on(
@@ -57,6 +53,12 @@ $(document).ready(function () {
     function (event) {
       var refreshURL = $('.blockcart').data('refresh-url');
       var requestData = {};
+      console.log("Reason ", {
+        id_customization: event.reason.idCustomization,
+        id_product_attribute: event.reason.idProductAttribute,
+        id_product: event.reason.idProduct,
+        action: event.reason.linkAction
+      })
       if (event && event.reason && typeof event.resp !== 'undefined' && !event.resp.hasError) {
         requestData = {
           id_customization: event.reason.idCustomization,
@@ -69,8 +71,13 @@ $(document).ready(function () {
         prestashop.emit('showErrorNextToAddtoCartButton', { errorMessage: event.resp.errors.join('<br/>')});
       }
       $.post(refreshURL, requestData).then(function (resp) {
+          console.log("resultData ",resp.preview)
+        if (resp.preview) {
+          $('#blockcart').replaceWith($(resp.preview));
+        }
 
-        if (resp.modal) {
+        if(resp.modal)
+        {
           showModal(resp.modal);
         }
       }).fail(function (resp) {
