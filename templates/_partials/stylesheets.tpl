@@ -47,6 +47,7 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="{$urls.css_url}bbs.css">
+<link rel="stylesheet" href="{$urls.css_url}bbs2.css">
 <link rel="stylesheet" href="{$urls.css_url}toast.css">
 <link rel="stylesheet" href="{$urls.css_url}global.css">
 

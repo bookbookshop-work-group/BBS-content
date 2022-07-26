@@ -259,6 +259,8 @@ $(document).ready(function () {
   {/if}
 
 <script src="{$urls.js_url}toast.js"></script>
+<script src="{$urls.js_url}custom_whistlist.js"></script>
+
 
   
 

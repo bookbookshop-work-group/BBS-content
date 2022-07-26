@@ -2,7 +2,7 @@
   <input type="hidden" name="token" value="{$static_token}">
   <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
   <div class="blockcart product-add-to-cart js-product-add-to-cart" data-refresh-url="{Context::getContext()->link->getModuleLink('ps_shoppingcart', 'ajax', [], null, null, null, true)}">
-  {if $page.page_name=="index"}
+  {if $page.page_name!="product"}
     <button   
       class="single_add_to_cart_button alt special_btn_add_to_cart"
       data-button-action="add-to-cart"

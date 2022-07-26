@@ -47,7 +47,7 @@
 
 
                 {* <a  id="wishlist_button"  onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|intval}', {$product.id_product_attribute}, 1); return false;" class="link"><i class="fa fa-heart"></i></a> *}
-                <a   class="ets-wishlist-button-add add_wishlist"><i class="fa fa-heart"></i></a>
+                <button   class="ets-wishlist-button-add add_wishlist"><i class="fa fa-heart"></i></button>
             </div>
         </div>
       </div>

@@ -27,8 +27,9 @@
 
 <div class="products{if !empty($cssClass)} {$cssClass}{/if} products_wrapper isotope_wrapper">
     <div class="products grid row ">
+    
         {foreach from=$products item="product" key="position"}
-            <div class="col-sm-12 col-md-4">
+            <div >
                 {include file="catalog/_partials/miniatures/product.tpl" product=$product position=$position productClasses=$productClasses}
             </div>
         {/foreach}
