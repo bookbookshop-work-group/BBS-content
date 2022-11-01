@@ -2214,7 +2214,9 @@ p.demo_store {
 }
 
 /* Product */
-.woocommerce .product {
+.woocommerce .portfolio_slider_ul .product {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
 .woocommerce .product .product_wrapper {
