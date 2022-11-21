@@ -26,12 +26,49 @@
 
 
 {block name='content_wrapper'}
+  {hook h='displayBestSeller'}
   {hook h='displayListPoductCategory' idCategory="3"}
   {hook h='displayFeatureProductShoppingCart'}
-  {hook h='displayListPoductCategory' idCategory="6"}
-  {hook h='displayBestSeller'}
-  {hook h='selectionproduitdumois'}
   {hook h='displayListPoductCategory' idCategory="9"}
+
+  <div class="section flv_sections_30">
+      <div class="section_wrapper clearfix">
+          <div class="items_group clearfix">
+              <!-- One Second (1/2) Column -->
+              <div class="column one-second column_column">
+                  <div class="column_attr ">
+                      <div class="flv_style_39">
+                          <h2 class="themecolor"
+                              style="color: #ce4057; font-size: 2em;"><b><i
+                                      class="fa fa-hand-o-right"></i> Sélection du
+                                  mois
+                                  <i class="fa fa-hand-o-left"></i>
+                                  <br>
+                              </b></h2>
+                          <p>
+                              <span class="big" style="font-size: 1.5em;">Comme tous les
+                                  mois, retrouvez ici
+                                  les 3 ouvrages spécialement sélectionnés pour
+                                  vous par nos équipes. A découvrir sans plus
+                                  tarder.</span>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <!-- One Second (1/2) Column -->
+              <div class="column one-second column_column">
+                  <div class="column_attr ">
+
+{hook h='displayListPoductCategory' idCategory="11"}
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  {hook h='selectionproduitdumois'}
+  {hook h='displayListPoductCategory' idCategory="10"}
+  {hook h='displayListPoductCategory' idCategory="14"}
+  {hook h='displayListPoductCategory' idCategory="20"}
 
   <div class="section flv_sections_11" style="margin-top: 30px;">
     <div class="section_wrapper clearfix">
@@ -54,7 +91,7 @@
                 <div class="team team_circle">
                   <div class="image_frame no_link scale-with-grid">
                     <div class="image_wrapper">
-                      <img class="scale-with-grid" style="height: 250px; width: 300px;"
+                      <img class="scale-with-grid"
                         src="{$link->getCatImageLink($category.name, $category.id_category, 'category_default')|escape:'html'}"
                         alt="{$category.name|escape:'htmlall':'UTF-8'}" />
                     </div>

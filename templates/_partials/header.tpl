@@ -5,28 +5,26 @@
   </div>
   
   <div class="top_bar" style="background-color: #E53B5D; color: white !important;">
-      <div class="container">
-          <div class="row">
-              <div class="col d-flex flex-row">
-                  <div class="top_bar_contact_item">
-                      <div class="top_bar_icon"><img
-                              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918577/phone.png"
-                              alt=""></div>+237 693 132 111
+      <div class="container" style="color: white !important;">
+          <div class="row" style="color: white !important;">
+              <div class="col d-flex flex-row" style="color: white !important;">
+                  <div class="top_bar_contact_item" style="color: white !important;">
+                     <i class="fa fa-phone" aria-hidden="true" style="color: white !important; margin-right: 5px"></i>
+                     +237 693 132 111
                   </div>
                   <div class="top_bar_contact_item">
-                      <div class="top_bar_icon"><img
-                              src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918597/mail.png"
-                              alt=""></div><a href="mailto:fastsales@gmail.com"
-                          style=" color: white !important;">contact@bookbookshop.com</a>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      <a href="mailto:contact@bookbookshop.com"style="color: white !important; margin-left: 5px">
+                      contact@bookbookshop.com</a>
                   </div>
-                  <div class="top_bar_content ml-auto">
+                  <div class="top_bar_content ml-auto" style="color: white !important;">
                       
-                      <div class="top_bar_user">
+                      <div class="top_bar_user" style="color: white !important;">
                           
                           {hook h='displayNav1'}
                           
                           {* <div>
-                            <a href="#" style=" color: white !important;"><img
+                            <a href="#" style="color: white !important;"><img
                                       src="{$urls.img_url}/flags/fr.png" alt="Français" /></a>
                           
                           </div> *}
@@ -48,7 +46,7 @@
                   <div class="logo_container">
                       <div class="logo">
                           <a id="logo" href="{$urls.base_url}" title="{$shop.name}">
-                          <img class="scale-with-grid" src="{$shop.logo}" alt="{$shop.name}" style="height: 100%; width: 100%" />
+                          <img class="scale-with-grid" src="{$shop.logo}" alt="{$shop.name}"/>
                           </a>
                       </div>
                   </div>

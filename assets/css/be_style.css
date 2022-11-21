@@ -19,6 +19,7 @@
 | 
 |
 */
+
 @-moz-keyframes spin {
     100% {
         -moz-transform: rotate(360deg);
@@ -3173,7 +3174,7 @@ h3#ship-to-different-address label {
 
 .woocommerce img,.woocommerce-page img {
     height: auto;
-    max-width: 100%;
+    max-width: 200px;
 }
 
 .woocommerce #content div.product div.images,.woocommerce div.product div.images,.woocommerce-page #content div.product div.images,.woocommerce-page div.product div.images {

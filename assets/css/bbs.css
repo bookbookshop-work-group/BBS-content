@@ -2,6 +2,8 @@
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
+@import url('./font-awesome.css');
+@import url('./font-awesome.min.css');
 
 /*********************************
  style for modals
@@ -543,6 +545,7 @@ section
 }
 .header_search_content
 {
+	margin-left: 60px;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -795,7 +798,8 @@ select option
 {
 	position: absolute;
 	bottom: -1px;
-	right: -14px;
+	/* right: -14px; */
+	left: 12px;
 	width: 23px;
 	height: 23px;
 	background: #0e8ce4;

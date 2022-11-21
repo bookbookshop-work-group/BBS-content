@@ -23,19 +23,19 @@
                   <h4 style="color: #fff;"><b><a href="{$link->getCMSLink(4)|escape:'html'}">A propos de Nous</a></b></h4><br>
                   <div class="textwidget">
                       <ul class="list_mixed">
-                          <li class="list_idea" style="color: #fff; "><i></i>
-                          <a href="{$link->getCMSLink(4)|escape:'html'}">Qui sommes nous?</a>
+                          <li style="color: #fff; font-size: 1.3em; padding-left: 10px;"><i class="fa fa-check" aria-hidden="true"></i>
+                          <a href="{$link->getCMSLink(4)|escape:'html'}">Qui sommes nous</a>
                           </li>
-                          <li class="list_idea" style="color: #fff; ">
+                          <li style="color: #fff; font-size: 1.3em; padding-left: 10px;"><i class="fa fa-check" aria-hidden="true"></i>
                           <a href="{$link->getCMSLink(4)|escape:'html'}">L'équipe</a>
                           </li>
-                          <li class="list_idea" style="color: #fff; ">
+                          <li style="color: #fff; font-size: 1.3em; padding-left: 10px;"><i class="fa fa-check" aria-hidden="true"></i>
                           <a href="{$link->getCMSLink(4)|escape:'html'}">Nos partenaires</a>
                           </li>
-                          <li class="list_idea" style="color: #fff; ">
+                          <li style="color: #fff; font-size: 1.3em; padding-left: 10px;"><i class="fa fa-check" aria-hidden="true"></i>
                           <a href="{$urls.pages.contact}">Nous contacter</a>
                           </li>
-                          <li class="list_idea" style="color: #fff; ">
+                          <li style="color: #fff; font-size: 1.3em; padding-left: 10px;"><i class="fa fa-check" aria-hidden="true"></i>
                           <a href="{$link->getCMSLink(4)|escape:'html'}">Nos récompenses</a>
                           </li>
                       </ul>
@@ -51,10 +51,10 @@
                   <ul class="list_mixed">
                       
                           <a >
-                          <li class="list_idea" style="color: #fff; ">
+                          <li style="color: #fff; font-size: 1.3em; padding-left: 10px;"><i class="fa fa-check" aria-hidden="true"></i>
                           <a href="{$urls.pages.contact}">Signaler une erreur</a>
                           </li></a>
-                      <li class="list_idea" style="color: #fff; ">
+                      <li style="color: #fff; font-size: 1.3em; padding-left: 10px;"><i class="fa fa-check" aria-hidden="true"></i>
                         <a href="{$urls.pages.contact}">Editeurs, libraires, bourses du livre? Faites-vous référencer gratuitement</a>
 
                       </li>
